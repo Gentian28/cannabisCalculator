@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Gentian Shkembi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Dosage Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- content -->
+        <section id="content">
+
+            <!-- dosage calculator -->
+            <div class="dosage-calculator">
+                <div class="range-slider">
+                    <span id="rs-bullet" class="rs-label">0</span>
+                    <input type="range" step="0.1" min="0.01" max="35" value="0" id="rs-range-line" class="rs-range"
+                        name="thcPercent">
+                </div>
+
+                <div class="item">
+                    <label class="value-label" for="plantPercentThc">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3 class="title">What is the weight of cannabis used (in grams)</h3>
+                        </div>
+                    </label>
+                    <input type="number" min="0.5" max="99" class="input-value" name="cannabisWeight">
+                </div>
+
+                <div class="item">
+                    <label class="value-label" for="plantPercentThc">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3 class="title">
+                                What are the number of servings of the finished product you will be making with the
+                                cannabutter?</h3>
+                        </div>
+                    </label>
+                    <input type="number" min="1" max="99" class="input-value" name="servingsNr">
+                </div>
+
+                <div class="item">
+                    <span id="thcPerServing"></span>
+                    <span id="thcaToThcPerServing"></span>
+                </div>
+
+            </div>
+            <!-- dosage calculator end -->
+
+        </section>
+        <!-- content end -->
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

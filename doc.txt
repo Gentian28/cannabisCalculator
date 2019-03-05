@@ -1,0 +1,29 @@
+Design Documentation
+
+I used the file css/reset.css to remove some of browsers default bahaviour.
+
+Styles for the dosage calculator widget in css/style.css:
+
+.dosage-calculator
+Calculator container
+
+.item
+Row of the container.
+
+.value-label
+Icon + Title + Subtitle(if any)
+
+.title
+Name of the input field
+
+.subtitle
+Description of the input field
+
+.input-value
+Input field
+
+.result-label
+Name of the calculated result
+
+result
+Calculated result
