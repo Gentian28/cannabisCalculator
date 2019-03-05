@@ -246,72 +246,8 @@
 
 
 /* range */
-
-.slidecontainer {
-	width: 100%;
-}
-
-.slider {
-	-webkit-appearance: none;
-	width: 100%;
-	height: 15px;
-	border-radius: 5px;
-	background: #d3d3d3;
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
-}
-
-.slider:hover {
-	opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: #4CAF50;
-	cursor: pointer;
-	position: relative;
-}
-
-.slider::-webkit-slider-thumb::before {
-	content: 'cont';
-	width: 15px;
-	height: 10px;
-	position: absolute;
-	color: #000000;
-}
-
-.slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: #4CAF50;
-	cursor: pointer;
-}
-
-
-/* second */
-
 .range-slider {
 	position: relative;
-}
-
-.box-minmax {
-	margin-top: 30px;
-	width: 608px;
-	display: flex;
-	justify-content: space-between;
-	font-size: 20px;
-	color: #fff;
-}
-
-.box-minmax span:first-child {
-	margin-left: 10px;
 }
 
 .rs-range {
