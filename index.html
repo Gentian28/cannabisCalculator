@@ -25,40 +25,121 @@
         <section id="content">
 
             <!-- dosage calculator -->
-            <div class="dosage-calculator">
-                <div class="range-slider">
-                    <span id="rs-bullet" class="rs-label">0</span>
-                    <input type="range" step="0.1" min="0.01" max="35" value="0" id="rs-range-line" class="rs-range"
-                        name="thcPercent">
-                </div>
+            <div class="custom-container">
+                <section class="custom-card">
 
-                <div class="item">
-                    <label class="value-label" for="plantPercentThc">
-                        <i class="fas fa-leaf"></i>
-                        <div>
-                            <h3 class="title">What is the weight of cannabis used (in grams)</h3>
+                    <div class="custom-card-container">
+                        <h2 class="custom-card-header">Cannabutter Cooking Calculator</h2>
+                        <p class="custom-card-desc">The difficulty of accurately determining cannabutters’ potency is
+                            difficult even for professionals, so the following calculations are estimates based on
+                            current
+                            research and best practices.</p>
+                    </div>
+
+                    <section class="custom-card-container custom-card-section">
+                        <div class="number">1</div>
+                        <div class="input-container">
+                            <h3 class="input-name">What is the THC or CBD Percentage in the Cannabis?</h3>
+                            <p class="input-comment">See the label on the packaging for this information.</p>
+                            <p class="input-comment">Typical strains are 10-25% THC, but some strains can have over 25%
+                                THC.
+                            </p>
+                            <p class="input-comment">CBD varies greatly. Some strains are created and chosen for the
+                                higher
+                                CBD percentage based on the patient's needs.</p>
+                            <i>If your cannabis is labelled with a percentage of THCA (the non-psychoactive cannabinoid
+                                found in raw and live cannabis), rather than THC, enter that percentage here, then see
+                                the
+                                adjusted calculation for that in the results.</i>
+                            <div class="range-slider">
+                                <span id="rs-fill" class="rs-fill"></span>
+                                <span class="range-val min-val">0.01%</span>
+                                <span class="range-val max-val">35%</span>
+                                <span id="rs-bullet" class="rs-label">0</span>
+                                <input type="range" step="0.1" min="0.00" max="35" value="0" id="rs-range-line"
+                                    class="rs-range" name="thcPercent">
+                            </div>
                         </div>
-                    </label>
-                    <input type="number" min="0.5" max="99" class="input-value" name="cannabisWeight">
-                </div>
+                    </section>
 
-                <div class="item">
-                    <label class="value-label" for="plantPercentThc">
-                        <i class="fas fa-leaf"></i>
-                        <div>
-                            <h3 class="title">
-                                What are the number of servings of the finished product you will be making with the
-                                cannabutter?</h3>
+                    <section class="custom-card-container custom-card-section">
+                        <div class="number">2</div>
+                        <div class="input-container">
+                            <h3 class="input-name">What is the weight of cannabis used (in grams)</h3>
+                            <input type="number" min="0.5" max="99" value="0.5" class="custom-input"
+                                name="cannabisWeight" id="cannabisWeight" placeholder="Grams">
+                            <div class="error cannabisWeightError">Error</div>
                         </div>
-                    </label>
-                    <input type="number" min="1" max="99" class="input-value" name="servingsNr">
-                </div>
+                    </section>
 
-                <div class="item">
-                    <span id="thcPerServing"></span>
-                    <span id="thcaToThcPerServing"></span>
-                </div>
+                    <section class="custom-card-container custom-card-section">
+                        <div class="number">3</div>
+                        <div class="input-container">
+                            <h3 class="input-name">What are the number of servings of the finished product you will be
+                                making with the cannabutter?</h3>
+                            <input type="number" min="1" max="99" value="1" class="custom-input" name="servingsNr"
+                                placeholder="Servings">
+                            <div class="error servingsNrError">Error</div>
+                        </div>
+                    </section>
 
+                    <div class="down-arrow-outer">
+                        <h3>Scroll Down for Results</h3>
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                </section>
+
+                <aside class="custom-card custom-sidebar">
+                    <section>
+                        <h3 class="sidebar-header">Your Cannabis Cooking Calculations:</h3>
+                        <div id="thcPerServing"></div>
+                        <h3 class="sidebar-header">of THC or CBD in Each Serving</h3>
+                    </section>
+
+                    <div class="thcaToThcPerServing">
+                        <section>
+                            <h3 class="sidebar-header">THCA INFORMATION:</h3>
+                            <div class="sidebar-desc">The conversion from THCA to THC is 0.88.</div>
+                            <div class="g-flex">
+                                <p>If your original cannabis was labelled with THCA percentage, here is your adjusted
+                                    amount
+                                    of
+                                    THC per serving:</p>
+                                <div id="thcaToThcPerServing"></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="helper">
+                        <div><strong><i>5-10 Mg of THC is the recommended starting dose.</i></strong></div>
+                        <div><strong><i>Wait at least 2 hours before having more if you are unsure.</i></strong></div>
+                    </div>
+                    <div>
+                        <i>Due to the inefficiency of butter extraction, only an average of 60% of the cannabinoids
+                            (such as THC and CBD) are extracted, so this calculation takes that into account
+                            (source).
+                        </i>
+                    </div>
+
+                    <section class="instructions-list">
+                        <p>To be sure your cannabutter is as close to possible to this estimated amount of THC or CBD,
+                            follow these recommendations:
+                        </p>
+                        <ol style="text-align:left;">
+                            <li>Decarboxylate (release the full potential of the psychoactive effects using heat) the
+                                cannabis.<br><br></li>
+                            <li>Use high quality, unsalted, organic butter to avoid additional water and foreign
+                                substitutes.<br><br></li>
+                            <li>Portion Vertically - If you use only a portion of the cannabutter, do not scoop off of
+                                the top. Gravity impacts the way cannabinoids settle.<br><br></li>
+                            <li>Mix well - be sure the mixture for your edible using the cannabutter is perfectly
+                                uniform throughout.<br><br></li>
+                            <li>Cut the final product evenly into the precise number of portions. Use a ruler or scale
+                                if needed.</li>
+                        </ol>
+                    </section>
+                </aside>
             </div>
             <!-- dosage calculator end -->
 
