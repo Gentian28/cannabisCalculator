@@ -90,5 +90,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     calculateCannabutter();
-});;
-
+});

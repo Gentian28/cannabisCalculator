@@ -4,26 +4,38 @@ I used the file css/reset.css to remove some of browsers default bahaviour.
 
 Styles for the dosage calculator widget in css/style.css:
 
-.dosage-calculator
-Calculator container
+.g-flex
+Gives display flex to container
 
-.item
-Row of the container.
+.custom-card
+Card style
 
-.value-label
-Icon + Title + Subtitle(if any)
+.custom-card-header
+Styles card header
 
-.title
-Name of the input field
+.custom-card-desc
+Styles card paragraphs and descriptions
 
-.subtitle
-Description of the input field
+.input-container
+Full width input
 
-.input-value
-Input field
+.custom-input
+Form input styles
 
-.result-label
-Name of the calculated result
+.input-name
+Input label name
 
-result
-Calculated result
+.input-comment
+Input description text (if any)
+
+#thcPerServing
+THC per Serving Result
+
+#thcaToThcPerServing
+THCA to THC per Serving Result
+
+.custom-sidebar
+Sidebar width
+
+.error
+Error message style

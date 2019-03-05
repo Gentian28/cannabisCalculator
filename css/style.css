@@ -1,49 +1,11 @@
+/* main */
+.g-flex {
+	display: flex;
+}
 .custom-container {
 	display: flex;
 	align-items: flex-start;
 }
-
-.custom-sidebar {
-	min-width: 270px;
-	margin-left: 10px;
-}
-
-.sidebar-header {
-	font-weight: bold;
-	font-size: 14px;
-	text-align: center;
-	color: #565656;
-	margin-bottom: 8px;
-}
-
-.sidebar-desc {
-	color: #999999;
-	text-align: center;
-	font-size: 14px;
-	margin-bottom: 15px;
-}
-
-.custom-sidebar>*:not(:last-child) {
-	margin-bottom: 15px;
-	border-bottom: 1px #e5e5e5 solid;
-	padding-bottom: 15px;
-}
-
-.custom-sidebar i {
-	color: #999999;
-}
-
-.custom-sidebar ol {
-	list-style-type: decimal;
-	list-style-position: inside;
-	padding-left: 25px;
-	color: #333;
-}
-
-.custom-sidebar ol li {
-	line-height: 1.4;
-}
-
 .custom-card {
 	box-shadow: 0px 0px 3px 0px rgba(171, 171, 171, 0.6);
 	border-radius: 3px;
@@ -52,28 +14,13 @@
 	display: block;
 	position: relative;
 }
-
 .custom-card-container:not(:last-child) {
 	margin-bottom: 30px;
 }
-
 .custom-card-section {
 	display: flex;
 	align-items: flex-start;
 }
-
-.helper {
-	line-height: 1.6;
-	text-align: center;
-}
-
-.instructions-list p {
-	color: #999;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
 .number {
 	background: #32CD32;
 	color: #ffffff;
@@ -87,14 +34,12 @@
 	width: 25px;
 	margin-right: 25px;
 }
-
 .custom-card-header {
 	font-size: 20px;
 	text-align: left;
 	color: #5e5e5e;
 	margin-bottom: 5px;
 }
-
 .custom-card-desc {
 	font-size: 16px;
 	text-align: left;
@@ -102,11 +47,9 @@
 	word-break: break-word;
 	color: #999;
 }
-
 .input-container {
 	width: 100%;
 }
-
 .custom-input {
 	color: #4CAF50;
 	border-radius: 5px;
@@ -117,7 +60,6 @@
 	width: 100%;
 	border: 1px solid #d9dad3;
 }
-
 .input-name {
 	font-size: 16px;
 	text-align: left;
@@ -125,106 +67,30 @@
 	margin-bottom: 10px;
 	font-weight: bold;
 }
-
 .input-comment {
 	font-size: 14px;
 	text-align: left;
 	color: #999;
 	line-height: 24px;
 }
-
 .input-container i {
 	display: block;
 	color: #999;
 	margin: 15px 0;
 }
-
-.item {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 12px;
-	border-bottom: 1px #e5e5e5 solid;
-	transition: background-color .2s;
-}
-
-.item:hover {
-	background-color: #f9f9f9;
-}
-
-.item-result {
-	justify-content: flex-end;
-}
-
-.item:first-child {
-	padding-top: 0;
-}
-
-.value-label {
-	display: flex;
-	align-items: center;
-}
-
-.item label i {
-	color: #608430;
-	font-size: 28px;
-	margin-right: 24px;
-}
-
-.title {
-	font-size: 15px;
-	color: #4c4a47;
-}
-
-.subtitle {
-	font-size: 11px;
-	color: #888;
-}
-
-.input-value {
-	width: 100px;
-	text-align: center;
-	font-size: 20px;
-	border: 1px solid #eeeeee;
-	border-radius: 2px;
-	color: #888;
-	padding: 9px 10px;
-	margin-left: 12px;
-}
-
-.result-label {
-	font-size: 16px;
-	font-weight: bold;
-}
-
-.result {
-	color: #95af7e;
-	font-size: 26px;
-	margin-left: 12px;
-	min-width: 100px;
-	text-align: right;
-}
-
 #thcPerServing {
 	font-size: 26px;
 	color: #4CAF50;
 	text-align: center;
 	margin: 5px 0;
 }
-
-.g-flex {
-	display: flex;
-}
-
 .thcaToThcPerServing {
 	font-size: 13px;
 	color: #5e5e5e;
 }
-
 .thcaToThcPerServing p {
 	line-height: 1.5;
 }
-
 #thcaToThcPerServing {
 	font-size: 18px;
 	width: 100%;
@@ -233,7 +99,69 @@
 	min-width: 90px;
 	text-align: right;
 }
+.percentValuesList {
+    justify-content: space-between;
+    font-size: 10px;
+    color: #888;
+}
+.percentValuesList li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.percentValuesList li::before {
+    content: "|";
+    color: #ddd;
+    font-size: 10x;
+}
 
+/* sidebar */
+.custom-sidebar {
+	min-width: 270px;
+	margin-left: 10px;
+}
+.custom-sidebar>*:not(:last-child) {
+	margin-bottom: 15px;
+	border-bottom: 1px #e5e5e5 solid;
+	padding-bottom: 15px;
+}
+.custom-sidebar i {
+	color: #999999;
+}
+.custom-sidebar ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding-left: 25px;
+	color: #333;
+}
+.custom-sidebar ol li {
+	line-height: 1.4;
+}
+.sidebar-header {
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	color: #565656;
+	margin-bottom: 8px;
+}
+.sidebar-desc {
+	color: #999999;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.helper {
+	line-height: 1.6;
+	text-align: center;
+}
+.instructions-list p {
+	color: #999;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* error message */
 .error {
 	display: none;
 	width: 100%;
@@ -244,23 +172,19 @@
 	margin-top: 3px;
 }
 
-
 /* range */
 .range-slider {
 	position: relative;
 }
-
 .rs-range {
 	margin: 0;
 	margin-top: 35px;
 	width: 100%;
 	-webkit-appearance: none;
 }
-
 .rs-range:focus {
 	outline: none;
 }
-
 .rs-range::-webkit-slider-runnable-track {
 	width: 100%;
 	height: 1px;
@@ -271,7 +195,6 @@
 	border-radius: 15px;
 	border: 0px solid #010101;
 }
-
 .rs-range::-moz-range-track {
 	width: 100%;
 	height: 1px;
@@ -282,7 +205,6 @@
 	border-radius: 15px;
 	border: 0px solid #010101;
 }
-
 .rs-range::-webkit-slider-thumb {
 	position: relative;
 	z-index: 10;
@@ -297,7 +219,6 @@
 	-webkit-appearance: none;
 	margin-top: -7px;
 }
-
 .rs-range::-moz-range-thumb {
 	position: relative;
 	z-index: 10;
@@ -312,21 +233,18 @@
 	-webkit-appearance: none;
 	margin-top: -7px;
 }
-
 .rs-range::-moz-focus-outer {
 	border: 0;
 }
-
 .rs-fill {
 	position: absolute;
-	bottom: 4px;
+	top: 35px;
 	display: block;
 	background: #32CD32;
 	z-index: 5;
 	border-radius: 15px;
 	height: 6px;
 }
-
 .rs-label {
 	position: absolute;
 	transform-origin: center center;
@@ -340,11 +258,9 @@
 	width: 50px;
 	z-index: 10;
 }
-
 .rs-label::after {
 	content: "%";
 }
-
 .range-val {
 	position: absolute;
 	color: #333;
@@ -356,15 +272,14 @@
 	font-size: 11px;
 	font-weight: bold;
 }
-
 .min-val {
 	left: 0;
 }
-
 .max-val {
 	right: 0;
 }
 
+/* scroll bottom animation for mobile */
 @-webkit-keyframes mover {
 	0% {
 		transform: translateY(0);
@@ -373,7 +288,6 @@
 		transform: translateY(-10px);
 	}
 }
-
 @keyframes mover {
 	0% {
 		transform: translateY(0);
@@ -382,18 +296,15 @@
 		transform: translateY(-10px);
 	}
 }
-
 .down-arrow-outer {
 	text-align: center;
 	color: #32CD32;
 	display: none;
 }
-
 .down-arrow-outer h3 {
 	font-size: 14px;
 	font-weight: bold;
 }
-
 .down-arrow-outer i {
 	font-size: 18px;
 	display: block;
@@ -402,6 +313,7 @@
 	animation: mover .35s ease-in alternate infinite;
 }
 
+/* responsive */
 @media (max-width: 768px) {
 	.down-arrow-outer {
 		display: block;
